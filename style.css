@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: rgb(23, 2, 2);
+    color: aliceblue;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(21, 19, 19);
+    padding: 15px;
+    font-family: sans-serif;
+    box-shadow: steelblue;
+}
+
+nav h2 {
+    font-size: 28px;
+    color: white;
+    height: 39px;
+}
+
+form input {
+    padding: 8px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    margin-right: 5px;
+    width: 17rem;
+}
+
+form input::placeholder {
+    color: black;
+    padding: 2px;
+}
+
+form {
+    display: flex;
+        justify-content: center;
+}
+
+
+
+form button {
+    padding: 8px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    width: 4rem;
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+    background: orangered;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.recipe-container {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px;
+    width: 100%;
+    margin: 30px 0;
+    place-items: center;
+}
+
+.recipe {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    border-radius: 8px;
+    cursor: pointer;
+    max-width: 350px;
+}
+
+
+.recipe img {
+    height: 300px;
+}
+
+
+.recipe h3 {
+    font-size: 24px;
+}
+
+
+.recipe p {
+    font-size: 20px;
+    color: #4a4a4a;
+    margin: 4px 0;
+}
+    .recipe span {
+font-weight: 600;
+}
+
+
+.recipe button {
+    font-size: 20px;
+    font: 600;
+    padding: 10px;
+    cursor: pointer;
+    margin: 18px auto;
+    background-color: rgb(210, 143, 18);
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    color: rgb(38, 22, 22);
+}
+
+.recipe-details {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    background-color: rgb(60, 14, 14);
+    width: 40%;
+    height: 60%;
+    border-radius: 9px;
+    transition: all 0.5s ease-in-out;
+    overflow-y: scroll;
+}
